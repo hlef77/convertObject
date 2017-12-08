@@ -1,14 +1,56 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      to Json
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="contentArea">
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5>
+        <ion-card class="xmlCard">
+
+          <ion-card-header>
+            <span class="typeTitle">Xml</span>
+          </ion-card-header>
+
+          <ion-card-content>
+            <textarea [(ngModel)]="xmlTxt"></textarea>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 align-self-center>
+
+        <button ion-button color="light" round full (click)="onConvert()">
+          convert
+        </button>
+
+      </ion-col>
+
+      <ion-col col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5>
+        <ion-card class="jsonCard">
+
+          <ion-card-header>
+            <span class="typeTitle">Json</span>
+          </ion-card-header>
+
+          <ion-card-content>
+            <textarea>{{jsonTxt}}</textarea>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+
 </ion-content>

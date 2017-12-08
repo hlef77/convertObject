@@ -1,3 +1,27 @@
 page-home {
+  .contentArea {
+    background: #bbb;
+  }
+  ion-content {
+    .xmlCard {
+        background-color: #ffffe8
+    }
+    .jsonCard {
+      background-color: #e8ffff
+    }
+    ion-card {
+      ion-card-header {
+        .typeTitle {
+          font-size: 150%
+        }
+      }
+      ion-card-content {
+        textarea {
+          width: 100%;
+          height: 50vh;
+        }
+      }
+    }
 
+  }
 }
