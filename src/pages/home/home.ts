@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 import { AlertService } from '../../providers/service/alertService';
 import { ConvertService } from '../../providers/service/convertService';
 
+import { defaultXml } from '../../model/declaration';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -18,6 +20,7 @@ export class HomePage {
     private convertService: ConvertService,
     private alertService: AlertService
   ) {
+    this.xmlTxt = defaultXml;
   }
 
   private onConvert() {
